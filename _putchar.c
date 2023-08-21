@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  * _putchar - a function
+  * _putchar - a function for displaying a character in standard output.
   * @c: arguement
   * Return: write
   */
