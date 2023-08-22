@@ -1,16 +1,21 @@
 #include "main.h"
+#include <stdarg.h>
+
 
 /**
-  * _printf - a function that replicate printf
-  * @format: code
+  * _printf - replicate standard printf function
+  * @format: arguement
   * Return: length
   */
 
 int _printf(const char *format, ...)
 {
 	va_list arg;
+
 	va_start(arg, format);
 
-	int i = 0;
-	int num = 0;
+	int num = data_Type(format, arg);
+
+	va_end(arg);
+	return (num);
 }
