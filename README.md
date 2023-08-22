@@ -8,4 +8,6 @@ Below are the subroutines for this function:
 
 *_putchar.c*: contains the _putchar function for displaying a character in standard output.
 
+*print_format.c*: contains the print_format function.
+
 *_printf.c*: contains the actuall _printf function used for formated printing.
