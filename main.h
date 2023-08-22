@@ -16,6 +16,6 @@ int print_d(int n);
 
 int _printf(char *str, ...);
 
-int format(char *format, va_list arg);
+int print_format(char *format, va_list arg);
 
 #endif

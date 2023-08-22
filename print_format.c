@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-  * format - checks for data type and return the function
+  * print_format - checks for data type and return the function
   * @format: arg
   * @arg: arg
   * Return: length
   */
 
-int format(const char *format, va_list arg)
+int print_format(const char *format, va_list arg)
 {
 	int i = 0;
 	int num = 0;
