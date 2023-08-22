@@ -8,14 +8,14 @@
 
 int _putchar(char c);
 
-int print_str(char *s);
+int print_s(char *s);
 
 int print_i(void *p);
 
 int print_d(int n);
 
-int _printf(char *str, ...);
+int _printf(const char *str, ...);
 
-int print_format(char *format, va_list arg);
+int print_format(const char *format, va_list arg);
 
 #endif
