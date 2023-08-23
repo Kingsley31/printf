@@ -30,6 +30,10 @@ int print_format(const char *format, va_list arg)
 					{
 						num += print_s(str);
 					}
+					else
+					{
+						num += print_s("(null)");
+					}
 					break;
 				}
 				default:
