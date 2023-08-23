@@ -6,6 +6,17 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+/**
+  * struct PrintType - code
+  * @c: format type
+  * @fun: pointer function 
+  */
+typedef struct PrintType
+{
+	char c;
+	int (*fun)(va_list arg);
+} print_type; 
+
 int _putchar(char c);
 
 int print_s(char *s);

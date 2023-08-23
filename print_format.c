@@ -12,11 +12,6 @@ int print_format(const char *format, va_list arg)
 	int i = 0;
 	int num = 0;
 
-	if (format[i] == '%' && format[i + 1] == '\0')
-	{
-		return (-1);
-	}
-
 	while (format[i])
 	{
 		if (format[i] == '%' && format[i + 1] != '\0')
@@ -31,14 +26,7 @@ int print_format(const char *format, va_list arg)
 				{
 					char *str = va_arg(arg, char *);
 
-					if (str != NULL)
-					{
-						num += print_s(str);
-					}
-					else
-					{
-						num += print_s("(null)");
-					}
+					num += print_s(str);
 					break;
 				}
 				case '%':
