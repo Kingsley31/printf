@@ -36,6 +36,10 @@ int print_format(const char *format, va_list arg)
 					}
 					break;
 				}
+				case '%':
+					_putchar(format[i + 1]);
+					num++;
+					break;
 				default:
 					_putchar(format[i]); /** Print non-format characters directly */
 					_putchar(format[i + 1]);
