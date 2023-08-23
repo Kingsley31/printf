@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
+
 /**
   * _putchar - a function for displaying a character in standard output.
   * @c: arguement
