@@ -15,6 +15,9 @@ int _printf(const char *format, ...)
 
 	va_start(arg, format);
 
+	if (format == NULL)
+		return (-1);
+
 	num = print_format(format, arg);
 
 	va_end(arg);

@@ -23,6 +23,13 @@ int main(void)
     printf("Len:[%d]\n", len2);
     printf("Len:[%d]\n", len);
 
+    _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+    /**printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);*/
+    fflush(stdout);
+
+     printf("Len:[%d]\n", len);
+      printf("Len:[%d]\n", len2);
+
     return (0);
 
 }
