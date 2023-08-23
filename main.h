@@ -10,7 +10,7 @@ int _putchar(char c);
 
 int print_s(char *s);
 
-int print_d(int n);
+int print_d_i(int n);
 
 /**
   * struct FormatPrinter - code
@@ -26,6 +26,8 @@ typedef struct FormatPrinter
 int print_format_c(va_list arg);
 
 int print_format_s(va_list arg);
+
+int print_format_d_i(va_list arg);
 
 int (*get_format_printer_func(char c))(va_list arg);
 
