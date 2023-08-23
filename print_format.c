@@ -39,7 +39,7 @@ int print_format(const char *format, va_list arg)
 				default:
 					_putchar(format[i]); /** Print non-format characters directly */
 					_putchar(format[i + 1]);
-					num++;
+					num += 2;
 			}
 			i++; /** Skip the format specifier character */
 		}
