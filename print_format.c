@@ -19,7 +19,8 @@ int print_format(const char *format, va_list arg)
 			switch (format[i + 1])
 			{
 				case 'c':
-					num += _putchar(va_arg(arg, int));
+					_putchar(va_arg(arg, int));
+					num++;
 					break;
 				case 's':
 				{
@@ -32,7 +33,8 @@ int print_format(const char *format, va_list arg)
 					break;
 				}
 				default:
-					num += _putchar(format[i]); /** Print non-format characters directly */
+					_putchar(format[i]); /** Print non-format characters directly */
+					num++;
 			}
 			i++; /** Skip the format specifier character */
 		}
