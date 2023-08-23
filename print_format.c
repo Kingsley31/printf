@@ -12,6 +12,11 @@ int print_format(const char *format, va_list arg)
 	int i = 0;
 	int num = 0;
 
+	if (format[i] == '%' && format[i + 1] == '\0')
+	{
+		return (-1);
+	}
+
 	while (format[i])
 	{
 		if (format[i] == '%' && format[i + 1] != '\0')
