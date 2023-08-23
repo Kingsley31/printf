@@ -13,7 +13,7 @@ int main(void)
 
 	len = _printf("%");
 	printf("\n");
-	len2 = printf("%%");
+	len2 = printf("%");
 	fflush(stdout);
 
 	if (len != len2)

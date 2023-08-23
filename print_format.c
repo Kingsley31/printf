@@ -16,27 +16,20 @@ int print_format(const char *format, va_list arg)
 	{
 		if (format[i] == '%' && format[i + 1] != '\0')
 		{
-			switch (format[i + 1])
-			{
-				case 'c':
-					_putchar(va_arg(arg, int));
-					num++;
-					break;
-				case 's':
-				{
-					char *str = va_arg(arg, char *);
+			int (*fp)(va_list arg) = get_format_printer_func(format[i + 1]);
 
-					num += print_s(str);
-					break;
-				}
-				case '%':
-					_putchar(format[i + 1]);
-					num++;
-					break;
-				default:
-					_putchar(format[i]); /** Print non-format characters directly */
-					_putchar(format[i + 1]);
-					num += 2;
+			if (fp != NULL)
+			{
+				num += fp(arg);
+			}
+			else if (format[i + 1] == '%')
+			{
+				num += _putchar(format[i + 1]);
+			}
+			else
+			{
+				num += _putchar(format[i]); /** Print non-format characters directly */
+				num += _putchar(format[i + 1]);
 			}
 			i++; /** Skip the format specifier character */
 		}
@@ -44,8 +37,7 @@ int print_format(const char *format, va_list arg)
 		{
 			if (format[i] != '%')
 			{
-				_putchar(format[i]);
-				num++;
+				num += _putchar(format[i]);
 			}
 		}
 		i++;
