@@ -33,3 +33,15 @@ int print_format_d_i(va_list arg)
 
 	return (print_d_i(n));
 }
+
+/**
+ * print_format_b - prints arguement for b converted character
+ * @arg: va_list arguement passed
+ * Return: number of characters printed
+ */
+int print_format_b(va_list arg)
+{
+	long int n = va_arg(arg, long int);
+
+	return (print_b(n));
+}

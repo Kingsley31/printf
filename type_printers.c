@@ -45,3 +45,33 @@ int print_d_i(long int n)
 	_putchar(rem + '0');
 	return (len);
 }
+
+/**
+ * print_b - converts integer to binary and prints it
+ * @num: the number to convert
+ * Return: number of characters printed
+ */
+int print_b(long int num)
+{
+	int binary[64];
+	int index = 0;
+	int count = 0;
+	int i;
+
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+	while (num > 0)
+	{
+		binary[index++] = num % 2;
+		num /= 2;
+	}
+	for (i = index - 1; i >= 0; i--)
+	{
+		_putchar(binary[i] + '0');
+		count++;
+	}
+	return (count);
+}

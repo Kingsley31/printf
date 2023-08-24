@@ -12,6 +12,8 @@ int print_s(char *s);
 
 int print_d_i(long int n);
 
+int print_b(long int num);
+
 /**
   * struct FormatPrinter - code
   * @c: format type
@@ -28,6 +30,8 @@ int print_format_c(va_list arg);
 int print_format_s(va_list arg);
 
 int print_format_d_i(va_list arg);
+
+int print_format_b(va_list arg);
 
 int (*get_format_printer_func(char c))(va_list arg);
 
