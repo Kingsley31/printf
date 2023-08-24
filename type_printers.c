@@ -26,7 +26,7 @@ int print_s(char *s)
  * @n: integer to be printed
  * Return: number of characters printed
  */
-int print_d_i(int n)
+int print_d_i(long int n)
 {
 	int rem = n % 10;
 	int len;

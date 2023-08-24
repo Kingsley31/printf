@@ -10,7 +10,7 @@ int _putchar(char c);
 
 int print_s(char *s);
 
-int print_d_i(int n);
+int print_d_i(long int n);
 
 /**
   * struct FormatPrinter - code

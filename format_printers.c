@@ -29,7 +29,7 @@ int print_format_s(va_list arg)
  */
 int print_format_d_i(va_list arg)
 {
-	int n = va_arg(arg, int);
+	int n = va_arg(arg, long int);
 
 	return (print_d_i(n));
 }
