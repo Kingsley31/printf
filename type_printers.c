@@ -53,7 +53,7 @@ int print_d_i(long int n)
  */
 int print_b(unsigned long num)
 {
-	int binary[64];
+	int binary[128];
 	int index = 0;
 	int count = 0;
 	int i;
