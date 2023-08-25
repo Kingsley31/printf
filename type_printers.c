@@ -51,7 +51,7 @@ int print_d_i(long int n)
  * @num: the number to convert
  * Return: number of characters printed
  */
-int print_b(unsigned long num)
+int print_b(unsigned int num)
 {
 	int binary[64];
 	int index = 0;
