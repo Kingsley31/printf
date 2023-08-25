@@ -12,7 +12,7 @@ int print_s(char *s);
 
 int print_d_i(long int n);
 
-int print_b(unsigned int num);
+int print_b(unsigned long num);
 
 /**
   * struct FormatPrinter - code
