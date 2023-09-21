@@ -75,3 +75,31 @@ int print_b(unsigned int num)
 	}
 	return (count);
 }
+
+/**
+  * print_u - prints a unsighned int
+  * @num: the int
+  * Return: num
+  */
+
+int print_u(unsigned long int num)
+{
+	int rem = num % 10;
+	int len;
+
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
+	if (n < 10)
+	{
+		_putchar(num + '0');
+		return (1);
+	}
+
+	len = print_u(num / 10);
+	_putchar(rem + '0');
+	return (len + 1);
+}

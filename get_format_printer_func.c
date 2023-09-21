@@ -13,7 +13,11 @@ int (*get_format_printer_func(char c))(va_list arg)
 		{'s', print_format_s},
 		{'d', print_format_d_i},
 		{'i', print_format_d_i},
-		{'b', print_format_b}
+		{'b', print_format_b},
+		{'u', print_format_u},
+		{'o', print_format_o},
+		{'x', print_format_x},
+		{'X', print_format_X}
 	};
 
 	int i = 0;

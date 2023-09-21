@@ -45,3 +45,16 @@ int print_format_b(va_list arg)
 
 	return (print_b(n));
 }
+
+/** 
+  * print_format_u - prints unsigned integer in decimal
+  * @arg: va_list arguement passed
+  * Return: number character printed
+  */
+
+int print_format_u(va_list arg)
+{
+	long int num = va_arg(arg, long int);
+
+	return (print_u(num));
+}
