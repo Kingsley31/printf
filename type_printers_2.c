@@ -19,7 +19,7 @@ int print_o(unsigned long int n)
 
 	if (n < 8)
 	{
-		_putchar(n + 'o');
+		_putchar(n + '0');
 		return (1);
 	}
 
