@@ -82,15 +82,10 @@ int print_b(unsigned int num)
   * Return: num
   */
 
-int print_u(long int num)
+int print_u(unsigned long int num)
 {
 	int rem = num % 10;
 	int len;
-
-	if (num < 0)
-	{
-		print_u(num * -1);
-	}
 
 	if (num == 0)
 	{
