@@ -93,7 +93,7 @@ int print_u(unsigned long int num)
 		return (1);
 	}
 
-	if (n < 10)
+	if (num < 10)
 	{
 		_putchar(num + '0');
 		return (1);

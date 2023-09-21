@@ -54,7 +54,7 @@ int print_format_b(va_list arg)
 
 int print_format_u(va_list arg)
 {
-	long int num = va_arg(arg, long int);
+	int num = va_arg(arg, long int);
 
 	return (print_u(num));
 }
