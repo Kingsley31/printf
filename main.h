@@ -35,12 +35,12 @@ int print_format_d_i(va_list arg);
 
 int print_format_b(va_list arg);
 
+int print_format_u(va_list arg);
+
 int (*get_format_printer_func(char c))(va_list arg);
 
 int _printf(const char *str, ...);
 
 int print_format(const char *format, va_list arg);
-
-int print_format_u(va_list arg);
 
 #endif
