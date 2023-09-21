@@ -71,3 +71,16 @@ int print_format_o(va_list arg)
 
 	return (print_o(n));
 }
+
+/**
+  * print_format_x - handles format an integer as a lowercase hexadecimal
+  * @arg: arguement passed
+  * Return: number of character
+  */
+
+int print_format_x(va_list arg)
+{
+	int n = va_arg(arg, long int);
+
+	return (print_x(n));
+}

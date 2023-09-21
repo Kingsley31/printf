@@ -16,11 +16,12 @@ int (*get_format_printer_func(char c))(va_list arg)
 		{'b', print_format_b},
 		{'u', print_format_u},
 		{'o', print_format_o},
+		{'x', print_format_x},
 	};
 
 	int i = 0;
 
-	while (i < 7)
+	while (i < 8)
 	{
 		if (fp[i].c == c)
 			return (fp[i].fun);
