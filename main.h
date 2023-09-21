@@ -16,6 +16,8 @@ int print_b(unsigned int num);
 
 int print_u(unsigned long int num);
 
+int print_o(unsigned long int n);
+
 /**
   * struct FormatPrinter - code
   * @c: format type
@@ -36,6 +38,8 @@ int print_format_d_i(va_list arg);
 int print_format_b(va_list arg);
 
 int print_format_u(va_list arg);
+
+int print_format_o(va_list arg);
 
 int (*get_format_printer_func(char c))(va_list arg);
 

@@ -58,3 +58,16 @@ int print_format_u(va_list arg)
 
 	return (print_u(n));
 }
+
+/**
+  * print_format_o - prints format an integer as an octal number
+  * @arg: va_list arguement passed
+  * Return: number of character printed
+  */
+
+int print_format_o(va_list arg)
+{
+	int n = va_arg(arg, long int);
+
+	return (print_o(n));
+}
