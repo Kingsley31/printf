@@ -20,6 +20,8 @@ int print_o(unsigned long int n);
 
 int print_x(unsigned long int n);
 
+int print_XC(unsigned long int n);
+
 /**
   * struct FormatPrinter - code
   * @c: format type
@@ -44,6 +46,8 @@ int print_format_u(va_list arg);
 int print_format_o(va_list arg);
 
 int print_format_x(va_list arg);
+
+int print_format_XC(va_list arg);
 
 int (*get_format_printer_func(char c))(va_list arg);
 

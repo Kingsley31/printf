@@ -26,3 +26,16 @@ int print_format_x(va_list arg)
 
 	return (print_x(n));
 }
+
+/**
+  * print_format_XC - handles format integer in a uppercase hexadecimal
+  * @arg: arguement passed
+  * Return:  number of character
+  */
+
+int print_format_XC(va_list arg)
+{
+	int n = va_arg(arg, long int);
+
+	return (print_XC(n));
+}
