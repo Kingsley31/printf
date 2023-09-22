@@ -16,11 +16,11 @@ int print_b(unsigned int num);
 
 int print_u(unsigned int num);
 
-int print_o(unsigned long int n);
+int print_o(unsigned int n);
 
-int print_x(unsigned long int n);
+int print_x(unsigned int n);
 
-int print_XC(unsigned long int n);
+int print_XC(unsigned int n);
 
 /**
   * struct FormatPrinter - code

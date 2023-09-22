@@ -6,7 +6,7 @@
   * Return: number of character
   */
 
-int print_o(unsigned long int n)
+int print_o(unsigned int n)
 {
 	int rem = n % 8;
 	int len;
@@ -34,7 +34,7 @@ int print_o(unsigned long int n)
   * Return: number of character passed
   */
 
-int print_x(unsigned long int n)
+int print_x(unsigned int n)
 {
 	int rem = n % 16;
 	int len;
@@ -71,7 +71,7 @@ int print_x(unsigned long int n)
   * Return: number of character
   */
 
-int print_XC(unsigned long int n)
+int print_XC(unsigned int n)
 {
 	int rem = n % 16;
 	int len;
