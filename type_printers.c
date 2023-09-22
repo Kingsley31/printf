@@ -82,7 +82,7 @@ int print_b(unsigned int num)
   * Return: num
   */
 
-int print_u(unsigned long int num)
+int print_u(unsigned int num)
 {
 	int rem = num % 10;
 	int len;
@@ -99,7 +99,7 @@ int print_u(unsigned long int num)
 		return (1);
 	}
 
-	len = print_u(num / 10);
+	len  = print_u(num / 10);
 	_putchar(rem + '0');
 	return (len + 1);
 }

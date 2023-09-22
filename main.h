@@ -14,7 +14,7 @@ int print_d_i(long int n);
 
 int print_b(unsigned int num);
 
-int print_u(unsigned long int num);
+int print_u(unsigned int num);
 
 int print_o(unsigned long int n);
 
